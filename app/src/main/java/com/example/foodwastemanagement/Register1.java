@@ -80,8 +80,8 @@ public class Register1 extends AppCompatActivity {
                     editor.putString("Gender", radioButton.getText().toString()); //FirstName=key
                     editor.apply();
 
-                    Intent next = new Intent(getApplicationContext(),Register2.class);
-                    startActivity(next);
+                    Intent next2 = new Intent(getApplicationContext(),Register2.class);
+                    startActivity(next2);
 
                 }
                 else
