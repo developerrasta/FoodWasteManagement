@@ -2,6 +2,7 @@ package com.example.foodwastemanagement;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
@@ -78,6 +79,9 @@ public class Register1 extends AppCompatActivity {
                     editor.putString("District", district.getText().toString()); //FirstName=key
                     editor.putString("Gender", radioButton.getText().toString()); //FirstName=key
                     editor.apply();
+
+                    Intent next = new Intent(getApplicationContext(),Register2.class);
+                    startActivity(next);
 
                 }
                 else
