@@ -56,7 +56,7 @@ public class Register1 extends AppCompatActivity {
 
 
                 if(!(
-                        fname.getText().toString().isEmpty() ||
+                                fname.getText().toString().isEmpty() ||
                                 lname.getText().toString().isEmpty() ||
                                 hname.getText().toString().isEmpty() ||
                                 hno.getText().toString().isEmpty()   ||
@@ -72,16 +72,16 @@ public class Register1 extends AppCompatActivity {
 
                     SharedPreferences.Editor editor = sharedPreferences.edit();
                     editor.putString("FirstName", fname.getText().toString()); //FirstName=key
-                    editor.putString("LastName", lname.getText().toString()); //FirstName=key
-                    editor.putString("HouseName", hname.getText().toString()); //FirstName=key
-                    editor.putString("HouseNumber", hno.getText().toString()); //FirstName=key
-                    editor.putString("Street", street.getText().toString()); //FirstName=key
-                    editor.putString("District", district.getText().toString()); //FirstName=key
-                    editor.putString("Gender", radioButton.getText().toString()); //FirstName=key
+                    editor.putString("LastName", lname.getText().toString());
+                    editor.putString("HouseName", hname.getText().toString());
+                    editor.putString("HouseNumber", hno.getText().toString());
+                    editor.putString("Street", street.getText().toString());
+                    editor.putString("District", district.getText().toString());
+                    editor.putString("Gender", radioButton.getText().toString());
                     editor.apply();
 
-                    Intent next2 = new Intent(getApplicationContext(),Register2.class);
-                    startActivity(next2);
+                    Intent next1 = new Intent(getApplicationContext(),Register2.class);
+                    startActivity(next1);
 
                 }
                 else
